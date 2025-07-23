@@ -2217,6 +2217,19 @@ html {
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
+/* White background for MediRoute YouTube videos */
+.mediroute .feature-image iframe {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.mediroute .project-video iframe {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
 .feature-content {
     flex: 1;
     padding: 30px;
