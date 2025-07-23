@@ -2180,6 +2180,27 @@ html {
 
 .feature-image img,
 .feature-image video {
+    width: 800px;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.feature-container:first-child .feature-image img,
+.feature-container:first-child .feature-image video {
+    width: 800px;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    background: white;
+}
+
+/* MediRoute specific styling for smaller videos */
+.mediroute .feature-image img,
+.mediroute .feature-image video {
     width: 200px;
     height: 125px;
     object-fit: cover;
@@ -2187,8 +2208,8 @@ html {
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.feature-container:first-child .feature-image img,
-.feature-container:first-child .feature-image video {
+.mediroute .feature-container:first-child .feature-image img,
+.mediroute .feature-container:first-child .feature-image video {
     width: 200px;
     height: 125px;
     object-fit: cover;
@@ -2234,8 +2255,17 @@ html {
     
     .feature-image img,
     .feature-image video {
+        width: 600px;
+        height: 375px;
+        object-fit: contain;
+        background: white;
+    }
+    
+    .mediroute .feature-image img,
+    .mediroute .feature-image video {
         width: 150px;
         height: 90px;
+        object-fit: cover;
     }
     
     .feature-content {
