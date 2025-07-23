@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediRoute | Suhwoo Lee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo"><span class="logo-first">S</span><span class="logo-last">L</span></a>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Suhwoo Lee - Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="project-detail">
+            <div class="project-container">
+                <div class="project-hero">
+                    <div class="project-intro">
+                        <h1 class="project-title">MediRoute</h1>
+                        <p class="project-tagline">A healthcare navigation app that connects patients with the right medical specialists and facilities</p>
+                    </div>
+                    
+                    <div class="project-cover">
+                        <img src="images/Frame 141.png" alt="MediRoute app interface" class="cover-image">
+                    </div>
+
+                    <div class="project-metadata">
+                        <div class="metadata-group">
+                            <h3>Role</h3>
+                            <p>UX Designer</p>
+                        </div>
+                        <div class="metadata-group">
+                            <h3>Timeline</h3>
+                            <p>2 months</p>
+                        </div>
+                        <div class="metadata-group">
+                            <h3>TEAM</h3>
+                            <p>2 UX Designers</p>
+                            <p>1 AI Engineer/Backend Developer</p>
+                            <p>1 Frontend Developer</p>
+                            <p>1 Product Manager/Marketer</p>
+                        </div>
+                        <div class="metadata-group">
+                            <h3>Skills</h3>
+                            <ul class="skills-list">
+                                <li>UX Research</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>Visual Design</li>
+                            </ul>
+                        </div>
+                        <div class="metadata-group">
+                            <h3>Tools</h3>
+                            <ul class="skills-list">
+                                <li>Figma</li>
+                                <li>HTML/CSS</li>
+                                <li>Python</li>
+                                <li>Google Docs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-summary">
+                    <h2>Project Overview</h2>
+                    <div class="summary-text">
+                        <p>MediRoute is a smart routing platform designed to assist emergency medical teams in reducing response times through AI-driven insights and real-time hospital data. Built during a 24-hour hackathon, our goal was to address the inefficiencies paramedics face when transporting patients, whether it’s unpredictable traffic, hospital overcrowding, or outdated routing systems.</p>                        
+                    </div>
+                </div>
+
+                <!-- Project Video -->
+                <div class="project-video">
+                    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 100vw; max-width: 100vw; margin: 0; position: relative; left: 50%; right: 50%; transform: translateX(-50%); display: flex; justify-content: center; align-items: center;">
+                        <video width="auto" height="400px" autoplay muted loop style="max-width: calc(100vw - 40px); margin: 0 auto; display: block; object-fit: cover;">
+                            <source src="images/MediRoute.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <section class="project-context">
+                    <div class="context-content">
+                        <h2>Context & Challenge</h2>
+                        <p>The existing 911 system makes it difficult to optimize hospital selection, which can lead to issues like bed shortages or lack of equipment during patient transport. To address this, paramedics use a mobile system that is easy to carry, allowing them to check the patient’s condition and hospital availability in real time. This enables them to receive immediate recommendations for the most suitable hospital and transport the patient accordingly.</p>
+                        
+                        <div class="challenge-solution">
+                            <div class="challenge">
+                                <p><strong>The Problem</strong></p>
+                                <div class="insights-grid">
+                                    <div class="insight-card">
+                                        <span class="insight-number">01</span>
+                                        <h4>Bed and equipment shortages</h4>
+                                        <p>Difficulty finding an appropriate hospital due to limited bed availability and medical equipment shortages.</p>
+                                    </div>
+                                    <div class="insight-card">
+                                        <span class="insight-number">02</span>
+                                        <h4>Real-time availability challenges</h4>
+                                        <p>Hard to check hospital availability in real time, leading to inefficient patient routing decisions.</p>
+                                    </div>
+                                    <div class="insight-card">
+                                        <span class="insight-number">03</span>
+                                        <h4>Patient data limitations</h4>
+                                        <p>Hard to obtain patient status data (e.g., heart rate) before hospital arrival, affecting treatment planning.</p>
+                                    </div>
+                                    <div class="insight-card">
+                                        <span class="insight-number">04</span>
+                                        <h4>Network connectivity issues</h4>
+                                        <p>Must be usable even in areas with unstable network connections during emergency situations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Process Section -->
+                <section class="project-process">
+                    <div class="project-container">
+                        <h2 class="center-title">Process</h2>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <h3>1. Discovery</h3>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="images/pic1.jpg" alt="Research findings and insights">
+                                    </div>
+                                    <p>To quickly understand the challenges in healthcare navigation, we conducted focused user interviews with patients and paramedics during the hackathon. We also benchmarked existing healthcare apps to identify common UX gaps. This rapid discovery process revealed issues such as unclear hospital availability, inefficient communication between paramedics and hospitals, and a lack of real-time patient status sharing. These became critical problems we aimed to solve within our 48-hour sprint.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <h3>2. Ideation</h3>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="images/IMG_2805.JPG" alt="Initial concepts and wireframes">
+                                    </div>
+                                    <p>Building on the insights from our discovery phase, we brainstormed features aimed at simplifying hospital selection and patient transport. We sketched low-fidelity wireframes that explored ideas like real-time hospital availability checks, patient condition sharing tools, and a streamlined interface for paramedics to get hospital recommendations on the spot.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <h3>3. Design</h3>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="images/IMG_2807.JPG" alt="Final design mockups">
+                                    </div>
+                                    <p>We transformed our validated concepts into high-fidelity mockups and interactive prototypes during the hackathon. These prototypes were tested with users on-site to quickly gather feedback and refine the interface. Our goal was to make sure the experience felt intuitive for paramedics in urgent situations and reliable for making critical hospital transport decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="research-content">
+                    <h2>Research & Discovery</h2>
+                    <div class="goal-content">
+                        <h3>Goal & Problem Statement</h3>
+                        <div class="goal-problem-container">
+                            <div class="goal-statement">
+                                <h4>Goal</h4>
+                                <p>To create a comprehensive healthcare navigation platform that serves both emergency medical teams and the general public, enabling informed decisions about hospital selection and transport through two complementary app experiences.</p>
+                            </div>
+                            <div class="problem-statement">
+                                <h4>Problem</h4>
+                                <p>Emergency medical teams and hospitals face significant challenges due to lack of real-time information about hospital capacity, traffic conditions, and specialized care availability. Additionally, hospitals struggle with limited access to advanced medical technology from major medical companies, creating gaps in care coordination and leading to delayed treatment and suboptimal patient outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="target-audience">
+                        <h3>Target Audience</h3>
+                        <div class="audience-content">
+                            <div class="primary-audience">
+                                <h4>Primary Users</h4>
+                                <ul>
+                                    <li><strong>Paramedics & EMTs:</strong> Emergency medical professionals who make critical transport decisions in the field</li>
+                                    <li><strong>Emergency Dispatchers:</strong> Personnel who coordinate emergency responses and route ambulances</li>
+                                    <li><strong>General Public (Potential Emergency Patients):</strong> Individuals who may need emergency care and want to understand hospital options and availability</li>
+                                </ul>
+                            </div>
+                            <div class="secondary-audience">
+                                <h4>Secondary Users</h4>
+                                <ul>
+                                    <li><strong>Hospital Emergency Departments:</strong> Staff who receive and coordinate incoming emergency patients</li>
+                                    <li><strong>Emergency Response Coordinators:</strong> Officials who manage large-scale emergency situations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Articles & Reports Subsection -->
+                    <div class="news-evidence">
+                        <h3>Supporting Evidence</h3>
+                        <div class="news-content">
+                            <div class="news-articles">
+                                <h4>News Articles</h4>
+                                <div class="article-examples">
+                                    <div class="article-item">
+                                        <img src="images/NIH NLM.jpg" alt="Emergency Department Crowding Report" class="article-image">
+                                        <div class="article-details">
+                                            <h5>Emergency Department Crowding: A National Data Report</h5>
+                                            <p>Analysis of 1,000,000+ ED visits in Korea (2018-2022) reveals 15.4% of patients visited during overcapacity periods, with 2.3 times higher mortality risk and 1.5 times longer length of stay compared to normal capacity periods.</p>
+                                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11700691/" target="_blank" class="article-link">Read Full Article →</a>
+                                        </div>
+                                    </div>
+                                    <div class="article-item">
+                                        <img src="images/ACEP.webp" alt="ACEP Crowding Report" class="article-image">
+                                        <div class="article-details">
+                                            <h5>Emergency Department Crowding & Boarding</h5>
+                                            <p>ACEP's comprehensive report on the nationwide ED overcrowding crisis, documenting how boarding patients in hallways and waiting rooms creates dangerous conditions and delays critical care for new patients.</p>
+                                            <a href="https://www.acep.org/administration/crowding--boarding?utm_source=chatgpt.com" target="_blank" class="article-link">Read Full Article →</a>
+                                        </div>
+                                    </div>
+                                    <div class="article-item">
+                                        <img src="images/cornell.png" alt="AI in Emergency Medicine" class="article-image">
+                                        <div class="article-details">
+                                            <h5>AI Applications in Emergency Medicine</h5>
+                                            <p>Systematic review of AI applications in emergency medicine, highlighting how machine learning can improve triage accuracy, predict patient outcomes, and optimize resource allocation in overcrowded emergency departments.</p>
+                                            <a href="https://arxiv.org/abs/2505.14765?utm_source=chatgpt.com" target="_blank" class="article-link">Read Full Article →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="news-videos">
+                                <h4>News Report Videos</h4>
+                                <div class="video-examples">
+                                    <div class="video-item">
+                                        <div class="video-placeholder">
+                                            <img src="images/WIFR TV.jpg" alt="WIFR TV Emergency Report" class="video-thumbnail">
+                                            <div class="video-overlay">
+                                                <span class="play-icon">▶</span>
+                                            </div>
+                                        </div>
+                                        <div class="video-details">
+                                            <h5>
+                                                Emergency rooms experience long wait times, overcrowding</h5>
+                                            <p>WIFR TV investigates the emergency department overcrowding crisis, showing patients waiting in hallways and ambulances being diverted due to hospital capacity issues, with healthcare workers describing the dangerous conditions.</p>
+                                            <a href="https://www.youtube.com/watch?v=OeDv3J1Rvfc&ab_channel=WIFRTV" target="_blank" class="video-link">Watch Video →</a>
+                                        </div>
+                                    </div>
+                                    <div class="video-item">
+                                        <div class="video-placeholder">
+                                            <img src="images/News10NBC.jpg" alt="News10NBC Emergency Report" class="video-thumbnail">
+                                            <div class="video-overlay">
+                                                <span class="play-icon">▶</span>
+                                            </div>
+                                        </div>
+                                        <div class="video-details">
+                                            <h5>‘It was dystopian’: Family of patient describes overcrowded local emergency rooms</h5>
+                                            <p>News10NBC investigates EMS response time delays, revealing how hospital capacity issues and ambulance diversions are causing longer wait times for emergency patients, with paramedics stuck waiting to transfer patients.</p>
+                                            <a href="https://www.youtube.com/watch?v=MRmzZ9vlD7I&ab_channel=News10NBC" target="_blank" class="video-link">Watch Video →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-persona">
+                        <h3>User Persona</h3>
+                        <div class="persona-container">
+                            <div class="persona-image">
+                                <img src="images/Ellipse 6.png" alt="Mike Rodriguez - MediRoute user persona">
+                            </div>
+                            <div class="persona-details">
+                                <h2>Mike Rodriguez</h2>
+                                <h3>28, Paramedic</h3>
+                                <p class="persona-role">Emergency medical professional making critical transport decisions</p>
+                                <p class="persona-quote">"Every second counts when transporting patients. I need real-time information about hospital capacity and the fastest routes to make the best decisions for my patients."</p>
+                                <ul class="persona-bullets">
+                                    <li>Works 12-hour shifts responding to emergency calls</li>
+                                    <li>Makes split-second decisions about patient transport</li>
+                                    <li>Needs real-time hospital capacity and traffic data</li>
+                                    <li>Requires reliable, fast information in high-stress situations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competitive Analysis Subsection -->
+                    <div class="competitive-analysis">
+                        <h3>Competitive Analysis</h3>
+                        <div class="competitors-grid">
+                            <div class="competitor-card">
+                                <img src="images/pulsara icon.webp" alt="Pulsara logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                                <h3><strong>Pulsara</strong></h3>
+                                <p class="competitor-description">Communication platform for EMS and hospitals to coordinate care in real time.</p>
+                                <div class="pros-cons">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>HIPAA-compliant messaging with hospital system integration</li>
+                                    </ul>
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Focuses more on communication than routing</li>
+                                    </ul>
+                                    <h4>Key Takeaway</h4>
+                                    <ul>
+                                        <li>Communication is critical, but routing insights must be layered on top.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="competitor-card">
+                                <img src="images/rapiddeploy icon.png" alt="RapidDeploy logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                                <h3><strong>RapidDeploy</strong></h3>
+                                <p class="competitor-description">Cloud-based dispatch platform for 911 centers and EMS.</p>
+                                <div class="pros-cons">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Real-time data feeds with CAD and mapping tools</li>
+                                    </ul>
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Expensive for small municipalities with high learning curve</li>
+                                    </ul>
+                                    <h4>Key Takeaway</h4>
+                                    <ul>
+                                        <li>Strong technical backbone, but user experience for paramedics may be complex.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="competitor-card">
+                                <img src="images/waze icon.webp" alt="Waze logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                                <h3><strong>Waze</strong></h3>
+                                <p class="competitor-description">Used by many EMS teams for navigation.</p>
+                                <div class="pros-cons">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Accurate traffic and route data with widely familiar UI</li>
+                                    </ul>
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Not tailored to EMS needs with no hospital capacity info</li>
+                                    </ul>
+                                    <h4>Key Takeaway</h4>
+                                    <ul>
+                                        <li>MediRoute can offer EMS-specific routing logic beyond public mapping tools.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="competitor-card">
+                                <img src="images/eschedule icon.jpg" alt="EMS eSchedule logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                                <h3><strong>EMS eSchedule</strong></h3>
+                                <p class="competitor-description">Workforce and scheduling tool for EMS teams.</p>
+                                <div class="pros-cons">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Custom shift tools with certification tracking</li>
+                                    </ul>
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Not focused on routing or hospital data with legacy UI</li>
+                                    </ul>
+                                    <h4>Key Takeaway</h4>
+                                    <ul>
+                                        <li>Shows opportunity to unify scheduling/logistics with live routing tools.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="competitor-card">
+                                <img src="images/docgo icon.png" alt="DocGo logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                                <h3><strong>Ambulnz (now DocGo)</strong></h3>
+                                <p class="competitor-description">Provides medical transport and on-demand care services.</p>
+                                <div class="pros-cons">
+                                    <h4>Pros</h4>
+                                    <ul>
+                                        <li>Integrated transport + care with mobile app for ride assignment</li>
+                                    </ul>
+                                    <h4>Cons</h4>
+                                    <ul>
+                                        <li>Not available nationwide and more business-focused than open platform</li>
+                                    </ul>
+                                    <h4>Key Takeaway</h4>
+                                    <ul>
+                                        <li>Business model can be inspiration, but MediRoute serves as a universal tool.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Visual Design Language Section -->
+                <section class="visual-design-language">
+                    <div class="project-container">
+                        <h2>Determining Visual Design Language</h2>
+                        <div class="section-intro">
+                            <p>After analyzing our competitors and understanding our target audience, we established a visual design language that prioritizes clarity, trust, and accessibility for emergency situations and even for future potential use cases.</p>
+                        </div>
+
+                        <div class="visual-design-content">
+                            <div class="design-principles">
+                                <h3>Design Principles</h3>
+                                <ul>
+                                    <li><strong>Clarity First:</strong> Information hierarchy that makes critical data immediately accessible</li>
+                                    <li><strong>Trust & Reliability:</strong> Professional, medical-grade aesthetic that instills confidence</li>
+                                    <li><strong>Accessibility:</strong> High contrast, readable typography, and intuitive navigation</li>
+                                    <li><strong>Speed:</strong> Minimal cognitive load for quick decision-making in emergency scenarios</li>
+                                </ul>
+                            </div>
+
+                            <div class="color-palette">
+                                <h3>Color Palette</h3>
+                                <div class="color-scheme">
+                                    <div class="color-item">
+                                        <div class="color-swatch" style="background-color: #141414;"></div>
+                                        <p><strong>Primary Black</strong><br>#141414<br>Main text and headers</p>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-swatch" style="background-color: #369EFF;"></div>
+                                        <p><strong>Primary Blue</strong><br>#369EFF<br>Primary actions and branding</p>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-swatch" style="background-color: #FF412E;"></div>
+                                        <p><strong>Emergency Red</strong><br>#FF412E<br>Critical alerts and urgent information</p>
+                                    </div>
+                                    <div class="color-item">
+                                        <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+                                        <p><strong>White</strong><br>#FFFFFF<br>Background and secondary elements</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="typography">
+                                <h3>Typography</h3>
+                                <div class="type-system">
+                                    <div class="type-example">
+                                        <h4 style="font-family: 'Lexend', sans-serif; font-weight: 700;">Headers: Lexend Bold</h4>
+                                        <p style="font-family: 'Lexend', sans-serif; font-weight: 700;">Clear, professional headings that establish information hierarchy</p>
+                                    </div>
+                                    <div class="type-example">
+                                        <h4 style="font-family: 'Lexend', sans-serif; font-weight: 600;">Subheaders: Lexend Semi-Bold</h4>
+                                        <p style="font-family: 'Lexend', sans-serif; font-weight: 600;">Emphasized text for critical information and alerts</p>
+                                    </div>
+                                    <div class="type-example">
+                                        <h4 style="font-family: 'Lexend', sans-serif; font-weight: 400;">Body Text: Lexend Regular</h4>
+                                        <p style="font-family: 'Lexend', sans-serif; font-weight: 400;">Highly readable body text optimized for quick scanning and comprehension</p>
+                                    </div>
+                                    <div class="type-example">
+                                        <h4 style="font-family: 'Lexend', sans-serif; font-weight: 300;">Secondary Text: Lexend Light</h4>
+                                        <p style="font-family: 'Lexend', sans-serif; font-weight: 300;">Subtle text for supporting information and captions</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="iconography">
+                                <h3>Iconography & Visual Elements</h3>
+                                <ul>
+                                    <li><strong>Medical Icons:</strong> Standardized healthcare symbols for universal recognition</li>
+                                    <li><strong>Status Indicators:</strong> Clear visual cues for hospital availability and capacity</li>
+                                    <li><strong>Navigation Elements:</strong> Intuitive icons that reduce cognitive load during emergencies</li>
+                                    <li><strong>Data Visualization:</strong> Simple charts and graphs for capacity and wait time information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="final-product">
+                    <h2>Final Product</h2>
+                    <div class="section-intro">
+                        <p>The MediRoute app features an intuitive interface that guides users through symptom assessment, specialist discovery, and appointment booking.</p>
+                    </div>
+
+                    <div class="final-product-content">
+                        <div class="figma-prototype">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFrk3DBBKPQTz4YcHzeVNVf%2FMediRoute%3Fpage-id%3D0%253A1%26node-id%3D26-638%26viewport%3D-964%252C362%252C0.07%26t%3DQsCT5k9ZG3gmMsUW-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26starting-point-node-id%3D26%253A638%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+                        </div>
+                        <p>Experience the MediRoute app through this interactive prototype. Navigate through the symptom assessment, specialist discovery, and appointment booking features to see how the app simplifies healthcare navigation.</p>
+                    </div>
+
+                    <div class="features-section">
+                        <h3>Key Features</h3>
+                        
+                        <div class="feature-container">
+                            <div class="feature-image">
+                                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                                    <source src="images/video 1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Symptom Assessment</h3>
+                                <p>Interactive symptom checker that helps users identify potential conditions and find appropriate specialists based on their symptoms.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-container">
+                            <div class="feature-image">
+                                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                                    <source src="images/video 2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>  
+                            <div class="feature-content">
+                                <h3>Hospital Capacity & Discovery</h3>
+                                <p>Real-time hospital capacity monitoring with bed availability, wait times, and specialized care unit status to help paramedics make informed transport decisions.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-container">
+                            <div class="feature-image">
+                                <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                                    <source src="images/video 3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Emergency Call Routing</h3>
+                                <p>Intelligent routing system that analyzes traffic conditions, hospital capacity, and patient condition to determine the optimal transport route and destination hospital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reflection Section -->
+                <section class="reflection-section">
+                    <div class="project-container">
+                        <h2>Reflection & Next Steps</h2>
+                        <div class="reflection-caption">
+                            <p>After completing the final version of <em>MediRoute</em>, we took a moment to reflect on both the successes of our design process and the areas that still hold room for growth. From early ideation to polished handoff, the journey reaffirmed our focus on building a product that addresses critical emergency medical routing challenges.</p>
+                            
+                            <h3>What Went Well</h3>
+                            <ul>
+                                <li>We successfully identified key pain points in emergency medical routing, validating the need for real-time hospital data integration.</li>
+                                <li>Our team maintained a clear understanding of the <strong>emergency response workflow</strong>, ensuring that paramedic needs shaped every stage of development.</li>
+                                <li>The transition from <strong>research insights to functional prototype</strong> was smooth and aligned well with our initial vision.</li>
+                                <li>User research results were <strong>highly positive</strong>, especially in response to features like real-time hospital availability and intelligent routing.</li>
+                                <li>Our focus on <strong>mobile-first design</strong> created an intuitive interface that works well in emergency situations.</li>
+                            </ul>
+                            
+                            <h3>What Could Be Improved</h3>
+                            <ul>
+                                <li>Some users noted that the <strong>interface could be more streamlined</strong> for high-stress emergency situations.</li>
+                                <li>The <strong>data integration complexity</strong> with existing hospital systems needs more consideration for real-world implementation.</li>
+                                <li>From a technical standpoint, certain <strong>network connectivity assumptions</strong> may not hold true in all emergency scenarios.</li>
+                                <li>While the routing algorithm is effective, <strong>real-time traffic integration</strong> could be enhanced for more accurate ETA calculations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="thank-you-container">
+        <div class="thank-you-content">
+            <h2 class="thank-you-classic">Thank you for reading!</h2>
+            <div class="thank-you-subtext">Feel free to reach out if you'd like to connect.</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/suhwoo-lee-370083267/" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.instagram.com/woo_suh/" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="mailto:suhwool@uci.edu" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+                <a href="https://dribbble.com/suhwool" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Made with all the love and care by Suhwoo © 2025</p>
+            <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
