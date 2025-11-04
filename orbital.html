@@ -7,8 +7,83 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Section titles - bold, italic, purple */
+        .orbital h2 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .orbital .project-detail h3 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .orbital .project-title {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        /* Metadata headings - bolder (not italic) */
+        .orbital .metadata-group h3 {
+            font-weight: 800;
+            color: #6B4EFF;
+            font-style: normal;
+        }
+        /* Process step titles - black, no italic (higher specificity) */
+        .orbital .project-detail .process-step h3 {
+            color: #000000 !important;
+            font-weight: 700;
+            font-style: normal;
+        }
+        /* Subsection titles - black, no italic */
+        .orbital .brainstorming-details h3,
+        .orbital .visual-design-details h3,
+        .orbital .wireframes-details h3 {
+            color: #000000;
+            font-weight: 600;
+            font-style: normal;
+        }
+        /* Research section titles - purple, bold, italic */
+        .orbital .research-intro h3 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        /* Reduce padding for specific sections */
+        .orbital .project-research {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .orbital .project-research .research-content {
+            margin-top: 0;
+        }
+        .orbital .project-research .research-intro {
+            padding: 0;
+            margin-top: 0;
+        }
+        .orbital .project-research .research-intro p {
+            margin-bottom: 8px;
+        }
+        .orbital .project-research .research-intro ul {
+            margin-top: 8px;
+            margin-bottom: 0;
+            padding-left: 24px;
+        }
+        .orbital .project-research .research-intro ul li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .orbital .project-research h2 {
+            margin-bottom: 8px;
+        }
+        .orbital .project-research h3 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+    </style>
 </head>
-<body>
+<body class="orbital">
     <header>
         <div class="header-container">
             <a href="index.html" class="logo"><span class="logo-first">S</span><span class="logo-last">L</span></a>
@@ -17,7 +92,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Suhwoo Lee - Product Designer.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,8 +122,8 @@
                     </div>
                     <div class="metadata-group">
                         <h3>TEAM</h3>
-                        <p>Two Graphic Designer</p>
-                        <p>Four UX Designer</p>
+                        <p>2 Graphic Designer</p>
+                        <p>4 UX Designer</p>
                     </div>
                     <div class="metadata-group">
                         <h3>TOOLS</h3>
@@ -67,7 +142,7 @@
             <div class="project-container">
                 <h2>Introduction</h2>
                 <div class="context-content">
-                    <p>Our team is developing a daily task tracker web application to help college students properly organize their tasks based on work, life, and personal needs, and can be engaging through gamification.</p>
+                    <p>College students today juggle an overwhelming number of responsibilities, like academic deadlines, part-time jobs, social commitments, and personal goals, often leaving them feeling stressed and disorganized. While numerous productivity tools exist, many feel too rigid, overwhelming, or lack the motivational elements needed to sustain long-term engagement. Orbital was conceived as a response to these pain points, reimagining task management as a playful, human-centered experience that adapts to how students actually work. By integrating gamification with flexible organization features, the platform transforms task tracking from a chore into an engaging journey that helps students balance their work, life, and personal needs while staying motivated through visual progress and satisfying feedback.</p>
                 </div>
             </div>
         </section>
@@ -320,11 +395,8 @@
                 <a href="https://www.instagram.com/woo_suh/" target="_blank" class="social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
-                <a href="mailto:suhwool@uci.edu" class="social-link">
+                <a href="mailto:suhwoolee@gmail.com" class="social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
-                <a href="https://dribbble.com/suhwool" target="_blank" class="social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
                 </a>
             </div>
         </div>

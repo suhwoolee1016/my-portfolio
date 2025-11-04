@@ -7,6 +7,72 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Section titles - bold, italic, purple */
+        .stalk h2 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .stalk .project-detail h3 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .stalk .project-title {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        /* Metadata headings - bolder (not italic) */
+        .stalk .metadata-group h3 {
+            font-weight: 800;
+            color: #6B4EFF;
+            font-style: normal;
+        }
+        /* Process step titles - black, no italic (higher specificity) */
+        .stalk .project-detail .process-step h3 {
+            color: #000000 !important;
+            font-weight: 700;
+            font-style: normal;
+        }
+        /* Subsection titles - black, no italic */
+        .stalk .brainstorming-details h3,
+        .stalk .research-intro h3,
+        .stalk .visual-design-details h3,
+        .stalk .wireframes-details h3 {
+            color: #000000;
+            font-weight: 600;
+            font-style: normal;
+        }
+        /* Reduce padding for specific sections */
+        .stalk .project-research {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        .stalk .project-research .research-content {
+            margin-top: 0;
+        }
+        .stalk .project-research .research-intro {
+            padding: 0;
+            margin-top: 0;
+        }
+        .stalk .project-research .research-intro p {
+            margin-bottom: 8px;
+        }
+        .stalk .project-research .research-intro ul {
+            margin-top: 8px;
+            margin-bottom: 0;
+            padding-left: 24px;
+        }
+        .stalk .project-research h2 {
+            margin-bottom: 8px;
+        }
+        .stalk .project-research h3 {
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+    </style>
 </head>
 <body class="stalk">
     <header>
@@ -17,7 +83,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Suhwoo Lee - Product Designer.pdf" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,11 +95,11 @@
             <div class="project-container">
                 <div class="project-intro">
                     <h1 class="project-title">$talk</h1>
-                    <p class="project-tagline">A cutting-edge global stock investment platform designed to redefine the way users engage with financial markets with a focus on accessibility, real-time interaction, and intuitive UX</p>
+                    <p class="project-tagline">A mobile and web product that improved employee performance by supporting a culture of appreciation, open feedback, and continuous learning.</p>
                 </div>
             </div>
             <div class="project-cover">
-                <img src="images/Frame 45.png" alt="$talk app interface showing financial insights" class="cover-image">
+                <img src="images/frame 45.png" alt="$talk app interface showing financial insights" class="cover-image">
             </div>
             <div class="project-container">
                 <div class="project-metadata">
@@ -80,10 +146,10 @@
             </div>
         </section>
 
-        <!-- Context Section -->
+        <!-- Introduction Section -->
         <section class="project-context">
             <div class="project-container">
-                <h2 class="center-title">Context</h2>
+                <h2>Introduction</h2>
                 <div class="context-content">
                     <p class="context-intro">On the Winter Quarter of 2024-25, there was a privilege to be a part of prestigious group Likelion's Hackathon program going against the team of 5 students from Korea who have been selected among 1500 candidates.</p>
                     <p class="context-problem">As a US team member, we had to follow our studies and researches toward our goal of winning the competition.</p>
@@ -117,7 +183,7 @@
         <!-- Process Section -->
         <section class="project-process">
             <div class="project-container">
-                <h2 class="center-title">Process</h2>
+                <h2>Process</h2>
                 <div class="process-steps">
                     <div class="process-step">
                         <h3>1. Discovery</h3>
@@ -150,23 +216,53 @@
             </div>
         </section>
 
-        <!-- Research Section -->
+        <!-- Goal Section -->
         <section class="project-research">
             <div class="project-container">
-                <h2 class="center-title">Research</h2>
+                <h2>Goal</h2>
                 <div class="research-content">
                     <div class="research-intro">
-                        <h3>Target Audience</h3>
+                        <p class="goal-content"><strong>Helping customers who seek fast and accurate investments from social media feeds, while connecting them with detailed analysis and experts</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience Section -->
+        <section class="project-research">
+            <div class="project-container">
+                <h2>Target Audience</h2>
+                <div class="research-content">
+                    <div class="research-intro">
                         <p>The platform aims to empower users by offering digestible, AI-generated insights and a supportive, intuitive interface.</p>
                         <ul>
                             <li>20–35 years old</li>
                             <li>Beginner to intermediate in financial knowledge</li>
                             <li>Seeking to build investment habits, understand the market, and make informed financial decisions with minimal stress</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <h3>Goal</h3>
-                        <p class="goal-content"><strong>Helping customers who seek fast and accurate investments from social media feeds, while connecting them with detailed analysis and experts</strong></p>
+        <!-- Problem Statement Section -->
+        <section class="project-research">
+            <div class="project-container">
+                <h2>Problem Statement</h2>
+                <div class="research-content">
+                    <div class="research-intro">
+                        <p><strong>How might we help beginner investors make confident decisions by simplifying complex financial information but through live social media feed from influencers?</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- User Research Section -->
+        <section class="project-research">
+            <div class="project-container">
+                <h2>User Research</h2>
+                <div class="research-content">
+                    <div class="research-intro">
                         <h3>User Interview Key Insights</h3>
                         <ul>
                             <li>During the hackathon in Silicon Valley, my team interviewed three potential users from diverse backgrounds from tech to VC (venture capitalist) to gather insights on their investment habits, challenges with financial platforms, and expectations for intuitive decision-making tools.</li>
@@ -175,113 +271,122 @@
                             <li>Apps that are frequently used are not well-made for beginners, but they also mentioned that most users enter with certain knowledge before doing stocks.</li>
                             <li>Biggest want / need: The usefulness of the information from the app</li>
                         </ul>
-                        <h3>Problem Statement</h3>
-                        <p><strong>How might we help beginner investors make confident decisions by simplifying complex financial information but through live social media feed from influencers?</strong></p>
                     </div>
-                    <!-- Brainstorming Subsection (moved here) -->
-                    <div class="brainstorming-section">
-                        <h3>Brainstorming</h3>
-                        <div class="brainstorming-content">
-                            <div class="brainstorming-image-block">
-                                <img src="images/309B35B3-DBC2-4537-866F-342AFF9B7C5F_1_105_c (1).png" alt="Whiteboard brainstorming photo 1">
-                                <div class="brainstorming-details">
-                                    <h3>Exploring Features, Flow, and Data Use</h3>
-                                    <ul>
-                                        <li>We sketched out card-style UI components to showcase trending stock topics, AI summaries, and user commentary</li>
-                                        <li>AI-powered summaries were conceptualized to help users quickly understand stock trends, including time-based analysis, price fluctuations, and sentiment breakdowns.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="brainstorming-image-block">
-                                <img src="images/A07F6614-EFF2-4E99-A2F2-4B0E584A3FA6_1_105_c (1).png" alt="Whiteboard brainstorming photo 2">
-                                <div class="brainstorming-details">
-                                    <h3>Interface Drafting and Navigation</h3>
-                                    <ul>
-                                        <li>We outlined a home feed layout consisting of stock cards, community posts, and data visualizations, with attention to visual hierarchy.</li>
-                                        <li>More detailed UI component wireframes were drawn, showing tabs, notification icons, and nested content (e.g., a tweet inside a card within the main feed).</li>
-                                    </ul>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Persona Section -->
+        <section class="user-persona">
+            <div class="project-container">
+                <div class="persona-flex">
+                    <div class="persona-image">
+                        <img src="images/Ellipse 1 (1).png" alt="Emily Park user persona photo">
+                    </div>
+                    <div class="persona-details">
+                        <h2>User Persona</h2>
+                        <h3>Emily Park</h3>
+                        <p class="persona-role">Student</p>
+                        <blockquote class="persona-quote">"I want to feel confident about where I'm putting my money, not just follow the hype. If I'm going to invest, I need clear, reliable info I can actually understand."</blockquote>
+                        <ul class="persona-bullets">
+                            <li>Emily Park is a 22-year-old Business Economics student in UC Berkeley, currently interning at a fintech startup.</li>
+                            <li>She's curious about investing but often finds financial platforms either too complex or too vague.</li>
+                            <li>She wants to build long-term financial stability and feel confident in her investment decisions.</li>
+                            <li>She's motivated by the desire to be financially independent and make informed choices without relying solely on social media trends.</li>
+                            <li>Emily worries about falling for misinformation or hype, especially when she doesn't fully understand a stock's risks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Analysis Section -->
+        <section class="competitive-analysis">
+            <div class="project-container">
+                <h2>Competitive Analysis</h2>
+                <div class="competitors-grid">
+                    <div class="competitor-card">
+                        <img src="images/Robinhood-Symbol-New 1.png" alt="Robinhood logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                        <h3><strong>Robinhood</strong></h3>
+                        <div class="pros-cons">
+                            <h4>Pros</h4>
+                            <ul>
+                                <li>Easy to use, Free</li>
+                            </ul>
+                            <h4>Cons</h4>
+                            <ul>
+                                <li>Overload of information and unimportant features that may confuse the users</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- End Brainstorming Subsection -->
-                    <!-- User Persona Subsection -->
-                    <div class="user-persona">
-                        <div class="persona-flex">
-                            <div class="persona-image">
-                                <img src="images/Ellipse 1 (1).png" alt="Emily Park user persona photo">
-                            </div>
-                            <div class="persona-details">
-                                <h2>User Persona</h2>
-                                <h3>Emily Park</h3>
-                                <p class="persona-role">Student</p>
-                                <blockquote class="persona-quote">“I want to feel confident about where I'm putting my money, not just follow the hype. If I'm going to invest, I need clear, reliable info I can actually understand.”</blockquote>
-                                <ul class="persona-bullets">
-                                    <li>Emily Park is a 22-year-old Business Economics student in UC Berkeley, currently interning at a fintech startup.</li>
-                                    <li>She's curious about investing but often finds financial platforms either too complex or too vague.</li>
-                                    <li>She wants to build long-term financial stability and feel confident in her investment decisions.</li>
-                                    <li>She's motivated by the desire to be financially independent and make informed choices without relying solely on social media trends.</li>
-                                    <li>Emily worries about falling for misinformation or hype, especially when she doesn't fully understand a stock's risks.</li>
-                                </ul>
-                            </div>
+                    <div class="competitor-card">
+                        <div class="competitor-logos-combined">
+                            <img src="images/Robinhood-Symbol-New 2.png" alt="Bloomberg logo" class="competitor-logo" style="margin-right: 12px; background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                            <img src="images/Robinhood-Symbol-New 3.png" alt="CNBC logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
+                        </div>
+                        <h3><strong>Bloomberg & CNBC</strong></h3>
+                        <div class="pros-cons">
+                            <h4>Pros</h4>
+                            <ul>
+                                <li>Very Informative, Real-time finance news</li>
+                            </ul>
+                            <h4>Cons</h4>
+                            <ul>
+                                <li>Over-abundant amount of news, Hard to use for beginners</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Competitive Analysis Subsection -->
-                    <div class="competitive-analysis">
-                        <h3>Competitive Analysis</h3>
-                        <div class="competitors-grid">
-                            <div class="competitor-card">
-                                <img src="images/Robinhood-Symbol-New 1.png" alt="Robinhood logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
-                                <h3><strong>Robinhood</strong></h3>
-                                <div class="pros-cons">
-                                    <h4>Pros</h4>
-                                    <ul>
-                                        <li>Easy to use, Free</li>
-                                    </ul>
-                                    <h4>Cons</h4>
-                                    <ul>
-                                        <li>Overload of information and unimportant features that may confuse the users</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="competitor-card">
-                                <div class="competitor-logos-combined">
-                                    <img src="images/Robinhood-Symbol-New 2.png" alt="Bloomberg logo" class="competitor-logo" style="margin-right: 12px; background: transparent; box-shadow: none; width: 120px; height: 120px;">
-                                    <img src="images/Robinhood-Symbol-New 3.png" alt="CNBC logo" class="competitor-logo" style="background: transparent; box-shadow: none; width: 120px; height: 120px;">
-                                </div>
-                                <h3><strong>Bloomberg & CNBC</strong></h3>
-                                <div class="pros-cons">
-                                    <h4>Pros</h4>
-                                    <ul>
-                                        <li>Very Informative, Real-time finance news</li>
-                                    </ul>
-                                    <h4>Cons</h4>
-                                    <ul>
-                                        <li>Over-abundant amount of news, Hard to use for beginners</li>
-                                    </ul>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brainstorming Section -->
+        <section class="brainstorming-section">
+            <div class="project-container">
+                <h2>Brainstorming</h2>
+                <div class="brainstorming-content">
+                    <div class="brainstorming-image-block">
+                        <img src="images/309B35B3-DBC2-4537-866F-342AFF9B7C5F_1_105_c (1).png" alt="Whiteboard brainstorming photo 1">
+                        <div class="brainstorming-details">
+                            <h3>Exploring Features, Flow, and Data Use</h3>
+                            <ul>
+                                <li>We sketched out card-style UI components to showcase trending stock topics, AI summaries, and user commentary</li>
+                                <li>AI-powered summaries were conceptualized to help users quickly understand stock trends, including time-based analysis, price fluctuations, and sentiment breakdowns.</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Visual Design Language Subsection -->
-                    <div class="visual-design-language">
-                        <h3>Determining the Visual Design Language</h3>
-                        <div class="visual-design-flex">
-                            <div class="visual-design-image">
-                                <img src="images/Group 37.png" alt="Visual design group illustration">
-                            </div>
-                            <div class="visual-design-details" style="width:100%">
-                                <p>As $talk aims to make financial conversations more approachable and socially engaging for beginners and experts, our visual design language needed to strike a careful balance between credibility, clarity, and community warmth.</p>
-                                <h3>Images</h3>
-                                <ul>
-                                    <li>We curated images that reflected a calm, approachable, and socially grounded tone. Clean, focused workspaces and soft, human elements like a piggy bank or handwritten notes helped us prioritize clarity, trust, and emotional accessibility.</li>
-                                </ul>
-                                <h3>Font</h3>
-                                <ul>
-                                    <li>We curated images that reflected a calm, approachable, and socially grounded tone. Clean, focused workspaces and soft, human elements like a piggy bank or handwritten notes helped us prioritize clarity, trust, and emotional accessibility.</li>
-                                </ul>
-                            </div>
+                    <div class="brainstorming-image-block">
+                        <img src="images/A07F6614-EFF2-4E99-A2F2-4B0E584A3FA6_1_105_c (1).png" alt="Whiteboard brainstorming photo 2">
+                        <div class="brainstorming-details">
+                            <h3>Interface Drafting and Navigation</h3>
+                            <ul>
+                                <li>We outlined a home feed layout consisting of stock cards, community posts, and data visualizations, with attention to visual hierarchy.</li>
+                                <li>More detailed UI component wireframes were drawn, showing tabs, notification icons, and nested content (e.g., a tweet inside a card within the main feed).</li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Design Language Section -->
+        <section class="visual-design-language">
+            <div class="project-container">
+                <h2>Determining the Visual Design Language</h2>
+                <div class="visual-design-flex">
+                    <div class="visual-design-image">
+                        <img src="images/Group 37.png" alt="Visual design group illustration">
+                    </div>
+                    <div class="visual-design-details" style="width:100%">
+                        <p>As $talk aims to make financial conversations more approachable and socially engaging for beginners and experts, our visual design language needed to strike a careful balance between credibility, clarity, and community warmth.</p>
+                        <h3>Images</h3>
+                        <ul>
+                            <li>We curated images that reflected a calm, approachable, and socially grounded tone. Clean, focused workspaces and soft, human elements like a piggy bank or handwritten notes helped us prioritize clarity, trust, and emotional accessibility.</li>
+                        </ul>
+                        <h3>Font</h3>
+                        <ul>
+                            <li>We curated images that reflected a calm, approachable, and socially grounded tone. Clean, focused workspaces and soft, human elements like a piggy bank or handwritten notes helped us prioritize clarity, trust, and emotional accessibility.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -376,11 +481,8 @@
                 <a href="https://www.instagram.com/woo_suh/" target="_blank" class="social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
-                <a href="mailto:suhwool@uci.edu" class="social-link">
+                <a href="mailto:suhwoolee@gmail.com" class="social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
-                <a href="https://dribbble.com/suhwool" target="_blank" class="social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
                 </a>
             </div>
         </div>

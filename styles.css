@@ -2395,7 +2395,7 @@ html {
 
 .thank-you-container {
     text-align: center;
-    margin: 80px 0 32px 0;
+    margin: 40px 0 16px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2426,7 +2426,7 @@ html {
 }
 
 .thank-you-container .social-links {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .back-to-top-btn {

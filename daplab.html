@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DapLab | Suhwoo Lee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Section titles - bold, italic, purple */
+        .daplab h2 {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .daplab .project-title {
+            color: #6B4EFF;
+            font-weight: 700;
+            font-style: italic;
+        }
+        /* Metadata headings - bolder (not italic) */
+        .daplab .metadata-group h3 {
+            font-weight: 800;
+            color: #6B4EFF;
+            font-style: normal;
+        }
+        /* Reduce spacing between metadata groups */
+        .daplab .project-metadata {
+            gap: 16px;
+        }
+        /* Cards container */
+        .daplab .cards-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        /* Role card styling */
+        .daplab .role-card {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #6B4EFF;
+            color: white;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(107, 78, 255, 0.2);
+        }
+        .daplab .role-card p {
+            margin: 0;
+            color: white;
+        }
+        /* LinkedIn card styling */
+        .daplab .linkedin-card {
+            display: inline-block;
+            padding: 12px 20px;
+            background: white;
+            color: #6B4EFF;
+            border: 2px solid #6B4EFF;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(107, 78, 255, 0.1);
+        }
+        .daplab .linkedin-card:hover {
+            background: #6B4EFF;
+            color: white;
+            box-shadow: 0 2px 8px rgba(107, 78, 255, 0.2);
+        }
+        .daplab .linkedin-card p {
+            margin: 0;
+            color: inherit;
+        }
+        /* Preview section */
+        .preview-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .preview-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .preview-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        .preview-item img {
+            width: 100%;
+            height: 250px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+        .preview-content {
+            padding: 24px;
+        }
+        .preview-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        .preview-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .current-badge {
+            display: inline-block;
+            background: #6B4EFF;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body class="daplab">
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo"><span class="logo-first">S</span><span class="logo-last">L</span></a>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Suhwoo Lee - Product Designer.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail">
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="project-container">
+                <div class="project-intro">
+                    <h1 class="project-title">DapLab <span class="current-badge">Current</span></h1>
+                    <div class="cards-container">
+                        <div class="role-card">
+                            <p>Research Assistant (Design)</p>
+                        </div>
+                        <a href="https://www.linkedin.com/company/daplab-uci/posts/?feedView=all" target="_blank" class="linkedin-card">
+                            <p>Visit Site</p>
+                        </a>
+                    </div>
+                    <p class="project-tagline">My experience bridging UX design and academic research at an HCI lab</p>
+                </div>  
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section">
+            <div class="project-container">
+                <h2>Design Preview</h2>
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 40px;">A detailed breakdown of my projects, highlighting the full research cycle from initial discovery to prototyping physical learning tools.</p>
+                
+                <div class="preview-grid">
+                    <div class="preview-item">
+                        <img src="images/IMG_3237.JPG" alt="DAP Lab design work preview 1">
+                        <div class="preview-content">
+                            <h3>Understanding the Problem and Research Project "Smart Playground"</h3>
+                            <p>Kicked off the project by conducting foundational user research to understand student and instructor needs within collaborative learning environments. Synthesized insights from interviews and literature reviews to define the core problem space.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-item">
+                        <img src="images/Screenshot 20251102 at 8.30.42 PM.png" alt="DAP Lab design work preview 2">
+                        <div class="preview-content">
+                            <h3>Cross-Institutional Collaboration & Design Development</h3>
+                            <p>As part of a multi-institutional team, I collaborated closely with members from Boston College and Tufts University to refine design concepts. We developed and deployed an initial prototype, conducting a key playtest session with students at the Anaheim School District to gather early, real-world feedback.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-item">
+                        <img src="images/image (4).png" alt="DAP Lab design work preview 3">
+                        <div class="preview-content">
+                            <h3>Tangible Design & UX Research</h3>
+                            <p>The lab and the cross-functional team focus on developing "stuffies" (smart plush toys) as tangible user interfaces. My work will involve leading the user-centered design of these physical products, defining their interactions, and conducting specific user research to see how students engage with them, directly linking our findings to the next iteration of the product's design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="thank-you-container">
+        <div class="thank-you-content">
+            <h2 class="thank-you-classic">Thank you for reading!</h2>
+            <div class="thank-you-subtext">Feel free to reach out if you'd like to connect.</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/suhwoo-lee-370083267/" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.instagram.com/woo_suh/" target="_blank" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="mailto:suhwoolee@gmail.com" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Made with all the love and care by Suhwoo © 2025</p>
+            <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
